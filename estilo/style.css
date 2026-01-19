@@ -42,17 +42,20 @@ nav a {
 }
 
 main {
-    background-color: var(--cor2);
+    background-image: url(../imagens/logo1.png);
+    background-position: center center;
+    background-size: cover;
+    background-color: var(--cor3);
 }
 
 h3 {
     padding-bottom: 8px;
-    color: var(--cor1);
+    color: var(--cor2);
 }
 
 div p {
     font-weight: bolder;
-    color: var(--cor1);
+    color: var(--cor2);
 }
 
 .destaques {
@@ -81,10 +84,6 @@ div p {
     border-radius: 15px;
 }
 
-.destaque2 p {
-    padding-bottom: 25px;
-}
-
 .destaque3 {
     width: 150px;
     height: 270px;
@@ -110,7 +109,7 @@ div img {
 }
 
 button {
-    background-color: var(--cor1);
+    background-color: var(--cor2);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -118,4 +117,48 @@ button {
     cursor: pointer;
     font-size: 16px;
     font-weight: bolder;
+}
+
+.localizacao {
+    height: 200px;
+    display: block;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.localizacao h1 {
+    color: var(--cor2);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.localizacao p {
+    color: var(--cor2);
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.localizacao a {
+    color: var(--cor2);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.localizacao a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    background-color: var(--cor2);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
 }
