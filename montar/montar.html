@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Açai do Matheus</title>
+    <link rel="stylesheet" href="montar.css">
+</head>
+<body>
+    <header>
+    </header>
+    <nav class="menu">
+            <a href="../index.html">Home</a>
+            <a href="../sobre/sobre.html">Sobre</a>
+            <a href="../produtos/produtos.html">Cardapio</a>
+            <a href="../contato/contato.html">Contato</a>
+            
+    </nav>
+
+    <div class="container">
+  <h1>🍧 Monte seu Açaí</h1>
+
+  <!-- TAMANHO -->
+  <div class="section">
+    <h2>Escolha o tamanho</h2>
+    <label><input type="radio" name="size" value="10"> Pequeno (300ml) - R$10</label>
+    <label><input type="radio" name="size" value="14"> Médio (500ml) - R$14</label>
+    <label><input type="radio" name="size" value="18"> Grande (700ml) - R$18</label>
+    <label><input type="radio" name="size" value="15"> Batido Garrafa (500ml) - R$15</label>
+  </div>
+
+  <!-- ADICIONAIS -->
+  <div class="section">
+    <h2>Adicionais (+R$2 cada)</h2>
+    <label><input type="checkbox" value="3"> Banana (Fruta)</label>
+    <label><input type="checkbox" value="3"> Morango (Fruta)</label>
+    <label><input type="checkbox" value="0"> Leite em pó</label>
+    <label><input type="checkbox" value="0"> Granola</label>
+    <label><input type="checkbox" value="0"> Paçoca</label>
+    <label><input type="checkbox" value="5"> Nutella</label>
+  </div>
+
+  <!-- CALDAS -->
+  <div class="section">
+    <h2>Calda</h2>
+    <select id="syrup">
+      <option value="0">Sem calda</option>
+      <option value="0">Chocolate</option>
+      <option value="0">Morango</option>
+      <option value="0">Leite condensado</option>
+    </select>
+  </div>
+
+  <div class="section">
+  <h2>Seus dados</h2>
+  <input type="text" id="nome" placeholder="Seu nome">
+  <input type="text" id="endereco" placeholder="Endereço (se entrega)">
+</div>
+
+<div class="section">
+  <h2>Forma de recebimento</h2>
+  <label>
+    <input type="radio" name="entrega" value="0" checked>
+    Retirada no local (Grátis)
+  </label>
+  <label>
+    <input type="radio" name="entrega" value="5">
+    Entrega (+R$5)
+  </label>
+</div>
+
+  <div class="total">
+    Total: R$ <span id="total">0.00</span>
+  </div>
+
+  <button onclick="finalizar()">Finalizar Pedido</button>
+</div>
+
+    <script src="montar.js"></script>
+</body>
+</html>

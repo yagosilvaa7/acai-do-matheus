@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -43,77 +43,82 @@ nav a {
 
 body {
   background-color: var(--cor3);
-  margin: 0;
   font-family: Arial, sans-serif;
-  color: #fff;
 }
 
-.menu2 {
-    background-color: rgba(0, 0, 0, 0.226);
-    margin-top: 10px;
-    border-radius: 20px;
+.container {
+    font-weight: 600;
+  max-width: 420px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 h1 {
   text-align: center;
+  color: #6A1B9A;
   margin-bottom: 5px;
-  font-size: 1.8em;
 }
 
 .subtitle {
   text-align: center;
+  color: #555;
   font-size: 14px;
   margin-bottom: 20px;
 }
 
-section {
+.section {
   margin-bottom: 20px;
 }
 
-h2 {
-  font-size: 16px;
+.section h2 {
+  font-size: 15px;
+  color: #4A148C;
   margin-bottom: 10px;
-  border-bottom: 1px solid rgba(255,255,255,0.3);
-  padding-bottom: 4px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+label {
+  display: block;
+  margin-bottom: 6px;
+  cursor: pointer;
 }
 
-.card {
-  background: rgba(255,255,255,0.15);
+input[type="text"], select {
+  width: 100%;
   padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 8px;
+}
+
+.total {
+  background: #F3E5F5;
+  padding: 12px;
   border-radius: 10px;
   text-align: center;
+  font-size: 20px;
   font-weight: bold;
+  color: #4A148C;
 }
 
-.card span {
-  display: block;
-  margin-top: 4px;
-  font-size: 14px;
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  background: #6A1B9A;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-footer {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 14px;
+button:hover {
+  background: #4A148C;
 }
 
-footer p {
-  margin: 4px 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.3em;
+#nome {
+    text-transform: capitalize;
 }
-
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}   
