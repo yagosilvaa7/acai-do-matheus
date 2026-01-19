@@ -3,5 +3,92 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+    --cor1: #C449BC;
+    --cor2: #891EC7;    
+    --cor3: #3C2752;
+    --cor4: #B38186;
+    --cor5: #D4AF9F;
+}
+
+header {
+    background-color: var(--cor2);
+    min-height: 120px;
+    background-image: url(../imagens/logo2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 20px;
+}
+
+.menu {
+    background-color: rgba(109, 34, 143, 0.884);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    list-style-type: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    font-weight: bolder;
+}
+
+main {
+    background-color: var(--cor2);
+}
+
+.destaques {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cria 2 colunas de tamanho igual */
+    grid-template-rows: repeat(2, auto);    /* Cria 2 linhas */
+    gap: 10px; /* Espaçamento entre as divs */
+    padding: 10px;
+}
+
+.destaque1 {
+    width: 150px;
+    height: 230px;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.destaque2 {
+    height: 230px;
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.destaque3 {
+    height: 230px;
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.destaque4 {
+    height: 230px;
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+div img {
+    border-radius: 15px;
+    height: 150px;
+    width: 150px;
+}
