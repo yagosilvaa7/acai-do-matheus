@@ -53,7 +53,6 @@ h3 {
 div p {
     font-weight: bolder;
     color: var(--cor1);
-    padding-bottom: 8px;
 }
 
 .destaques {
@@ -119,5 +118,4 @@ button {
     cursor: pointer;
     font-size: 16px;
     font-weight: bolder;
-
 }
