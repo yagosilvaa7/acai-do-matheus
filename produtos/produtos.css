@@ -117,3 +117,34 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }   
+
+.botao {
+    position: fixed;
+    bottom: 20px;    /* Posição inferior */
+    right: 20px;     /* Posição direita */
+    z-index: 100;
+}
+
+.botao button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    background-color: var(--cor2);
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+}
+
+.botao a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+}
+.botao button:hover {
+    background-color: var(--cor3);
+    text-decoration: underline;
+}
