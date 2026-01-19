@@ -39,3 +39,90 @@ nav a {
     padding: 20px;
     font-weight: bolder;
 }
+
+main {
+    background-image: url(../imagens/imagen4.webp);
+    background-position: center left;
+    background-size: cover;
+    background-color: var(--cor3);
+    background-repeat: no-repeat;
+    display: block;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+#contato {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.562);
+    margin: 0px 15px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#contato h1 {
+    color: white;
+    font-family: cursive;
+    font-size: 2.7em;
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+#contato p {
+    font-size: 1.2em;
+    padding-bottom: 15px;
+}
+
+#contato button {
+    background-color: var(--cor3);
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#contato button:hover {
+    background-color: var(--cor2);
+    text-decoration: underline;
+}
+
+.localizacao {
+    color: white;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.562);
+    margin: 0px 15px;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.localizacao h1 {
+    color: white;
+    font-family: cursive;
+    font-size: 2.7em;
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.localizacao p {
+    font-size: 1.2em;
+    padding-bottom: 15px;
+}
+
+.localizacao a {
+    color: var(--cor2);
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.localizacao a:hover {
+    color: var(--cor1);
+    text-decoration: underline;
+}
