@@ -45,6 +45,17 @@ main {
     background-color: var(--cor2);
 }
 
+h3 {
+    padding-bottom: 8px;
+    color: var(--cor1);
+}
+
+div p {
+    font-weight: bolder;
+    color: var(--cor1);
+    padding-bottom: 8px;
+}
+
 .destaques {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Cria 2 colunas de tamanho igual */
@@ -55,33 +66,39 @@ main {
 
 .destaque1 {
     width: 150px;
-    height: 230px;
+    height: 270px;
     background-color: white;
     padding: 20px;
     text-align: center;
     border-radius: 15px;
-    align-items: center;
 }
 
 .destaque2 {
-    height: 230px;
-    background-color: #ccc;
+    width: 150px;;
+    height: 270px;
+    background-color: white;
     padding: 20px;
     text-align: center;
     border-radius: 15px;
 }
 
+.destaque2 p {
+    padding-bottom: 25px;
+}
+
 .destaque3 {
-    height: 230px;
-    background-color: #ccc;
+    width: 150px;
+    height: 270px;
+    background-color: white;
     padding: 20px;
     text-align: center;
     border-radius: 15px;
 }
 
 .destaque4 {
-    height: 230px;
-    background-color: #ccc;
+    width: 150px;
+    height: 270px;
+    background-color: white;
     padding: 20px;
     text-align: center;
     border-radius: 15px;
@@ -91,4 +108,16 @@ div img {
     border-radius: 15px;
     height: 150px;
     width: 150px;
+}
+
+button {
+    background-color: var(--cor1);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bolder;
+
 }
