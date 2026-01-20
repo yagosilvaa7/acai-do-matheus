@@ -23,21 +23,39 @@
   <!-- TAMANHO -->
   <div class="section">
     <h2>Escolha o tamanho</h2>
-    <label><input type="radio" name="size" value="10"> Pequeno (300ml) - R$10</label>
-    <label><input type="radio" name="size" value="14"> Médio (500ml) - R$14</label>
-    <label><input type="radio" name="size" value="18"> Grande (700ml) - R$18</label>
-    <label><input type="radio" name="size" value="15"> Batido Garrafa (500ml) - R$15</label>
+    <label><input type="radio" name="size" value="12"> Pequeno (300ml) - R$12</label>
+    <label><input type="radio" name="size" value="14"> Médio (400ml) - R$14</label>
+    <label><input type="radio" name="size" value="16.50"> Grande (500ml) - R$16.50</label>
+    <label><input type="radio" name="size" value="14"> Especial (400ml) - R$14</label>
+    <label><input type="radio" name="size" value="16.50"> Especial (500ml) - R$16.50</label>
   </div>
+
 
   <!-- ADICIONAIS -->
   <div class="section">
-    <h2>Adicionais (+R$2 cada)</h2>
-    <label><input type="checkbox" value="3"> Banana (Fruta)</label>
-    <label><input type="checkbox" value="3"> Morango (Fruta)</label>
+    <h2>Ate 3 Complementos</h2>
+    <label><input type="checkbox" value="0"> Amendoim</label>
     <label><input type="checkbox" value="0"> Leite em pó</label>
     <label><input type="checkbox" value="0"> Granola</label>
     <label><input type="checkbox" value="0"> Paçoca</label>
-    <label><input type="checkbox" value="5"> Nutella</label>
+    <label><input type="checkbox" value="0"> Choco Ball</label>
+
+      <h2>Frutas</h2>
+      <label><input type="checkbox" value="2"> Banana (+R$2)</label>
+      <label><input type="checkbox" value="3"> Morango (+R$3)</label>
+      <label><input type="checkbox" value="3"> Uva (+R$3)</label>
+      <label><input type="checkbox" value="3"> Manga (+R$3)</label>
+
+      <h2>Adicionais</h2>
+      <label><input type="checkbox" value="2"> Ovomaltine (+R$2)</label>
+      <label><input type="checkbox" value="2"> Bis (+R$2)</label>
+      <label><input type="checkbox" value="2"> Ouro Branco (+R$2)</label>
+      <label><input type="checkbox" value="3"> Gotas de chocolate (+R$3)</label>
+      <label><input type="checkbox" value="3"> Confete (+R$3)</label>
+      <label><input type="checkbox" value="4"> Kit Kat (+R$4)</label>
+      <label><input type="checkbox" value="6"> Nutella (+R$6)</label>
+      <label><input type="checkbox" value="6"> Creme de Ninho (+R$6)</label>
+      <label><input type="checkbox" value="6"> Creme de Amendoim (+R$6)</label>
   </div>
 
   <!-- CALDAS -->
@@ -45,8 +63,11 @@
     <h2>Calda</h2>
     <select id="syrup">
       <option value="0">Sem calda</option>
-      <option value="0">Chocolate</option>
       <option value="0">Morango</option>
+      <option value="0">Chocolate</option>
+      <option value="0">Menta</option>
+      <option value="0">Mel</option>
+      <option value="0">Caramelo</option>
       <option value="0">Leite condensado</option>
     </select>
   </div>
@@ -54,7 +75,17 @@
   <div class="section">
   <h2>Seus dados</h2>
   <input type="text" id="nome" placeholder="Seu nome">
-  <input type="text" id="endereco" placeholder="Endereço (se entrega)">
+
+  <input type="text" id="telefone" placeholder="Telefone / WhatsApp">
+
+  <input type="text" id="rua" placeholder="Rua">
+
+  <input type="text" id="numero" placeholder="Número">
+
+  <input type="text" id="bairro" placeholder="Bairro">
+
+  <input type="text" id="referencia" placeholder="Referência (opcional)">
+
 </div>
 
 <div class="section">
@@ -64,8 +95,12 @@
     Retirada no local (Grátis)
   </label>
   <label>
-    <input type="radio" name="entrega" value="5">
-    Entrega (+R$5)
+    <input type="radio" name="entrega" value="0">
+    Entrega no Bairro (Grátis) 
+  </label>
+  <label>
+    <input type="radio" name="entrega" value="3">
+    Entrega (+R$3)
   </label>
 </div>
 
@@ -75,6 +110,11 @@
 
   <button onclick="finalizar()">Finalizar Pedido</button>
 </div>
+
+  <footer>
+    <p>📲 WhatsApp: <strong><a href="https://wa.me/5532987109337">(32) 98710-9337</a></strong></p>
+    <p>📸 Instagram: <strong><a href="https://www.instagram.com/acaidomatheusjf/">acaidomatheusjf</a></strong></p>
+  </footer>
 
     <script src="montar.js"></script>
 </body>

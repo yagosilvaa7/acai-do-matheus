@@ -125,3 +125,24 @@ main {
     color: var(--cor1);
     text-decoration: underline;
 }
+
+footer {
+    background-color: var(--cor3);
+   text-align: center;
+   font-size: 14px;
+}
+
+footer p {
+    color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}   

@@ -9,22 +9,6 @@ inputs.forEach(input => {
 function calcularTotal() {
   let total = 0;
 
-  // tamanho
-  const size = document.querySelector('input[name="size"]:checked');
-  if (size) total += parseFloat(size.value);
-
-  // adicionais
-  document.querySelectorAll('input[type="checkbox"]:checked')
-    .forEach(item => {
-      total += parseFloat(item.value);
-    });
-
-  totalSpan.innerText = total.toFixed(2);
-}
-
-function calcularTotal() {
-  let total = 0;
-
   const size = document.querySelector('input[name="size"]:checked');
   if (size) total += parseFloat(size.value);
 
@@ -37,48 +21,46 @@ function calcularTotal() {
   totalSpan.innerText = total.toFixed(2);
 }
 
-document.querySelectorAll('input').forEach(el => {
-  el.addEventListener('change', calcularTotal);
-});
-
 function finalizar() {
   const nome = document.getElementById("nome").value.trim();
-  const endereco = document.getElementById("endereco").value.trim();
+  const telefone = document.getElementById("telefone").value.trim();
+  const rua = document.getElementById("rua").value.trim();
+  const numero = document.getElementById("numero").value.trim();
+  const bairro = document.getElementById("bairro").value.trim();
+  const referencia = document.getElementById("referencia").value.trim();
 
   const size = document.querySelector('input[name="size"]:checked');
-  if (!size) {
-    alert("Escolha um tamanho!");
-    return;
-  }
+  if (!size) return alert("Escolha um tamanho!");
 
-  if (!nome) {
-    alert("Digite seu nome!");
-    return;
-  }
+  if (!nome) return alert("Digite seu nome!");
+  if (!telefone) return alert("Digite seu telefone!");
 
   const entrega = document.querySelector('input[name="entrega"]:checked');
   const entregaTexto = entrega.parentElement.innerText;
 
-  if (entrega.value > 0 && !endereco) {
-    alert("Informe o endereço para entrega!");
-    return;
+  if (entrega.value > 0 && (!rua || !numero || !bairro)) {
+    return alert("Preencha rua, número e bairro para entrega!");
   }
 
   let adicionais = [];
   document.querySelectorAll('input[type="checkbox"]:checked')
     .forEach(item => adicionais.push(item.parentElement.innerText));
 
-  const caldaSelect = document.getElementById("syrup");
-  const caldaTexto = caldaSelect.options[caldaSelect.selectedIndex].text;
+  const calda = document.getElementById("syrup");
+  const caldaTexto = calda.options[calda.selectedIndex].text;
 
-  const total = document.getElementById("total").innerText;
+  const total = totalSpan.innerText;
 
   let mensagem = `
 🍧 *PEDIDO – AÇAÍ DO MATHEUS*
 
-👤 Cliente: ${nome}
-📦 ${entregaTexto}
-${endereco ? `📍 Endereço: ${endereco}` : ""}
+👤 Nome: ${nome}
+📞 Telefone: ${telefone}
+
+📍 Endereço:
+Rua ${rua}, Nº ${numero}
+Bairro: ${bairro}
+${referencia ? `📌 Referência: ${referencia}` : ""}
 
 🥣 Tamanho:
 ${size.parentElement.innerText}

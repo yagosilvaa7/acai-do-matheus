@@ -47,8 +47,8 @@ body {
 }
 
 .container {
-    font-weight: 600;
-  max-width: 420px;
+  font-weight: 600;
+  max-width: 550px;
   margin: 40px auto;
   background: #fff;
   padding: 22px;
@@ -59,7 +59,7 @@ body {
 h1 {
   text-align: center;
   color: #6A1B9A;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .subtitle {
@@ -94,7 +94,7 @@ input[type="text"], select {
 }
 
 .total {
-  background: #F3E5F5;
+  background: #5208a76c;
   padding: 12px;
   border-radius: 10px;
   text-align: center;
@@ -112,6 +112,7 @@ button {
   border: none;
   border-radius: 10px;
   font-size: 16px;
+  font-weight: bolder;
   cursor: pointer;
 }
 
@@ -122,3 +123,25 @@ button:hover {
 #nome {
     text-transform: capitalize;
 }
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+footer p {
+  color: white;
+  margin: 4px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}   
