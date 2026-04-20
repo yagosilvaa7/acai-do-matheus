@@ -49,7 +49,7 @@ header {
 .menu {
     background: linear-gradient(135deg, var(--cor2), var(--cor3));
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 60px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
@@ -57,6 +57,7 @@ header {
     top: 0;
     z-index: 100;
     padding: 0 20px;
+    gap: 40px;
 }
 
 .logo img {
@@ -94,7 +95,7 @@ body {
 
 .container {
   font-weight: 600;
-  max-width: 550px;
+  max-width: 500px;
   margin: 40px auto;
   background: #fff;
   padding: 22px;
@@ -214,4 +215,113 @@ footer a:hover {
     background-color: var(--cor2);
     transform: scale(1.1);
     box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu {
+        gap: 20px;
+        padding: 0 10px;
+    }
+    
+    nav a {
+        padding: 12px 15px;
+        font-size: 0.9em;
+        margin: 0 3px;
+    }
+    
+    .logo img {
+        height: 30px;
+    }
+    
+    .container {
+        max-width: 100%;
+        margin: 20px 10px;
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    .section h2 {
+        font-size: 1.2em;
+    }
+    
+    input[type="text"], select {
+        padding: 8px;
+    }
+    
+    button {
+        padding: 12px;
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        gap: 10px;
+        padding: 0 5px;
+        flex-wrap: wrap;
+    }
+    
+    nav a {
+        padding: 10px 12px;
+        font-size: 0.7em;
+        margin: 2px;
+    }
+    
+    .logo img {
+        height: 25px;
+    }
+    
+    header {
+        min-height: 70px;
+    }
+    
+    .container {
+        max-width: 100%;
+        margin: 15px 8px;
+        padding: 12px;
+        border-radius: 10px;
+    }
+    
+    h1 {
+        font-size: 1.4em;
+        margin-bottom: 8px;
+    }
+    
+    .section h2 {
+        font-size: 1em;
+        margin-bottom: 8px;
+    }
+    
+    label {
+        font-size: 0.9em;
+        margin-bottom: 5px;
+    }
+    
+    input[type="text"], select {
+        padding: 8px;
+        font-size: 0.9em;
+        margin-bottom: 6px;
+    }
+    
+    .total {
+        font-size: 1.1em;
+        padding: 10px;
+    }
+    
+    button {
+        padding: 12px;
+        font-size: 0.9em;
+        margin-top: 12px;
+    }
+    
+    .floating-btn {
+        bottom: 15px;
+        right: 15px;
+        padding: 10px 12px;
+        font-size: 0.75em;
+    }
 }

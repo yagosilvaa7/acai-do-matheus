@@ -49,7 +49,7 @@ header {
 .menu {
     background: linear-gradient(135deg, var(--cor2), var(--cor3));
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 60px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
@@ -57,6 +57,7 @@ header {
     top: 0;
     z-index: 100;
     padding: 0 20px;
+    gap: 40px;
 }
 
 nav a {
@@ -231,4 +232,81 @@ footer a:hover {
 .botao button:hover {
     background-color: var(--cor3);
     text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu {
+        gap: 20px;
+        padding: 0 10px;
+    }
+    
+    nav a {
+        padding: 12px 15px;
+        font-size: 0.9em;
+        margin: 0 3px;
+    }
+    
+    .logo img {
+        height: 30px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+        margin: 15px;
+    }
+    
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 10px;
+    }
+    
+    .card {
+        padding: 12px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        gap: 10px;
+        padding: 0 5px;
+        flex-wrap: wrap;
+    }
+    
+    nav a {
+        padding: 10px 12px;
+        font-size: 0.75em;
+        margin: 2px;
+    }
+    
+    .logo img {
+        height: 25px;
+    }
+    
+    header {
+        min-height: 70px;
+    }
+    
+    h1 {
+        font-size: 1.4em;
+        margin: 10px;
+    }
+    
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 8px;
+    }
+    
+    .card {
+        padding: 10px;
+        font-size: 0.8em;
+    }
+    
+    .floating-btn {
+        bottom: 15px;
+        right: 15px;
+        padding: 10px 12px;
+        font-size: 0.8em;
+    }
 }
