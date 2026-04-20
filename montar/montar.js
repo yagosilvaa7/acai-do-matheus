@@ -1,6 +1,13 @@
 const inputs = document.querySelectorAll('input, select');
 const totalSpan = document.getElementById('total');
-const whatsappNumber = "5532987109337";
+const whatsappNumber = "5532988286955";
+
+function scrollParaBotao() {
+  const btnFinalizar = document.getElementById('btnFinalizar');
+  if (btnFinalizar) {
+    btnFinalizar.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+}
 
 inputs.forEach(input => {
   input.addEventListener('change', calcularTotal);
