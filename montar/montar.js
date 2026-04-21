@@ -14,8 +14,7 @@ inputs.forEach(input => {
 });
 
 // Limitar complementos a 3
-const complementsSection = document.querySelectorAll('.section')[1];
-const complementCheckboxes = complementsSection.querySelectorAll('input[type="checkbox"]');
+const complementCheckboxes = document.querySelectorAll('input.complemento[type="checkbox"]');
 
 complementCheckboxes.forEach(checkbox => {
   checkbox.addEventListener('change', limitComplements);
