@@ -13,6 +13,38 @@ inputs.forEach(input => {
   input.addEventListener('change', calcularTotal);
 });
 
+// Limitar complementos a 3
+const complementsSection = document.querySelectorAll('.section')[1];
+const complementCheckboxes = complementsSection.querySelectorAll('input[type="checkbox"]');
+
+complementCheckboxes.forEach(checkbox => {
+  checkbox.addEventListener('change', limitComplements);
+});
+
+function limitComplements() {
+  const checkedCount = Array.from(complementCheckboxes).filter(cb => cb.checked).length;
+  complementCheckboxes.forEach(cb => {
+    if (!cb.checked) {
+      cb.disabled = checkedCount >= 3;
+    }
+  });
+}
+
+function calcularTotal() {
+  let total = 0;
+
+  const size = document.querySelector('input[name="size"]:checked');
+  if (size) total += parseFloat(size.value);
+
+  document.querySelectorAll('input[type="checkbox"]:checked')
+    .forEach(item => total += parseFloat(item.value));
+
+  const entrega = document.querySelector('input[name="entrega"]:checked');
+  if (entrega) total += parseFloat(entrega.value);
+
+  totalSpan.innerText = total.toFixed(2);
+}
+
 function calcularTotal() {
   let total = 0;
 
